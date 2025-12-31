@@ -1,0 +1,21 @@
+.app-footer {
+  position: relative;
+  height: 90px;
+  background-color: #082b3a;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .footer-content {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}

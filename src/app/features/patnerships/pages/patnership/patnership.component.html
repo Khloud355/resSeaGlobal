@@ -1,0 +1,28 @@
+<section class="partnerships">
+  <div class="main-data">
+    <div class="content">
+      <h2>Partnerships</h2>
+
+      <p>
+        Red Sea Global's strategic partnerships are vital to achieving Saudi
+        Arabia's Vision 2030 by driving innovation, sustainability, and economic
+        diversification in tourism development. Through alliances with
+        technology, infrastructure, and environmental leaders, RSG ensures
+        world-class, eco-friendly destinations like The Red Sea and AMAALA.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
+      <div class="card-container">
+        @for (card of cards; track $index) {
+        <app-partnership-card
+          [card]="card"
+          (clicked)="openPartnerDetails($event)"
+        ></app-partnership-card>
+        }
+      </div>
+    </div>
+  </div>
+</section>

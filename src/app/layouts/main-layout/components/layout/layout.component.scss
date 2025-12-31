@@ -1,0 +1,88 @@
+.app-layout {
+  display: grid;
+  grid-template-columns: 222px 1fr;
+  min-height: 100vh;
+
+  .app-sidebar {
+    flex-shrink: 0;
+  }
+
+  .app-main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .app-content {
+      position: relative;
+      z-index: 10;
+      flex: 1;
+    }
+    .app-header {
+      height: 72px;
+      flex-shrink: 0;
+
+      z-index: 10;
+    }
+  }
+
+  .app-main::before {
+    content: "";
+
+    z-index: 1;
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(180deg, rgb(3 19 38 / 90%) 19%, rgba(5, 30, 45, 0.5) 45%, rgba(5, 30, 45, 0.95) 87%);
+  }
+}
+.app-main {
+  position: relative;
+}
+
+.app-background {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  z-index: 0;
+}
+
+.bg-image {
+  flex: 1;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-panel {
+  width: 38%;
+  background: linear-gradient(180deg, #1f5070 0%, #0c1e2b 17%, #081621 100%);
+  height: calc(170vh - 72px);
+  display: none;
+}
+
+.split-page {
+  .bg-panel {
+    display: block;
+  }
+}
+
+.app-header,
+.app-content {
+  position: relative;
+  z-index: 10;
+}
+.app-main.split-page::before {
+  background: linear-gradient(
+    180deg,
+    rgb(3 17 26 / 60%) 20%,
+    rgb(0 0 0 / 25%) 45%,
+    rgba(5, 30, 45, 0.6) 90%
+  ) !important;
+}

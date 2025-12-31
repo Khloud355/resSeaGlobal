@@ -1,0 +1,53 @@
+<aside class="sidebar">
+  <div class="logo">
+    <img src="../../../../assets/Logos/RedSea-Logo.svg" alt="Red Sea Global" />
+  </div>
+
+  <div class="menu">
+    @for (item of menu; track item.label) { @if (!item.expandable) {
+    <a class="menu-item" [routerLink]="item.route">
+      <span class="indicator"></span>
+      <img
+        [src]="'../../../../assets/SidemenuIcons/' + item.icon"
+        class="menu-icon"
+        alt="icon"
+      />
+      <span class="text">{{ item.label }}</span>
+    </a>
+    } @if (item.expandable) {
+    <div class="menu-group">
+      <div class="menu-item open" (click)="toggleSection(item.label)">
+        <span class="indicator"></span>
+        <img
+          [src]="'../../../../assets/SidemenuIcons/' + item.icon"
+          class="menu-icon"
+          alt="icon"
+        />
+        <span class="text">{{ item.label }}</span>
+
+        <img
+          class="menu-arrow"
+          src="../../../../assets/SidemenuIcons/Arrow.svg"
+          alt=""
+          [class.toggle]="openedSection() === item.label"
+        />
+      </div>
+
+      @if (openedSection() === item.label) {
+      <div class="submenu">
+        @for (child of item.children; track child.label) {
+
+        <a
+          class="submenu-item"
+          [routerLink]="child.route"
+          routerLinkActive="active"
+        >
+          <span class="submenu-label"> {{ child.label }}</span>
+        </a>
+        }
+      </div>
+      }
+    </div>
+    } }
+  </div>
+</aside>

@@ -1,0 +1,20 @@
+<header class="header">
+  <div class="header-content">
+    <nav class="nav">
+      @for (item of navItems; track item.route) {
+      <a [routerLink]="item.route" routerLinkActive="active">
+        {{ item.label }}
+      </a>
+      }
+    </nav>
+
+    <div class="actions">
+      <div class="lang">Ar</div>
+      <div class="profile">
+        <span class="icon">
+          <img src="../../../../../assets/images/user (1).png" alt="user" />
+        </span>
+      </div>
+    </div>
+  </div>
+</header>

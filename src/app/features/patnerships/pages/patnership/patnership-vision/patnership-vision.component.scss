@@ -1,0 +1,137 @@
+.patnership-vision {
+  margin-left: 2rem;
+  color: #ffffff;
+  .back-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+    cursor: pointer;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:
+      background-color 0.35s ease,
+      border-color 0.35s ease;
+
+    img {
+      width: 10px;
+      height: 15px;
+
+      transform-origin: right center;
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover {
+      background-color: #9f8249;
+      border-color: #9f8249;
+      opacity: 1.1;
+
+      img {
+        transform: scaleX(1.5);
+      }
+    }
+  }
+  .vision-content {
+    margin-top: 6rem;
+
+    .title {
+      font-weight: 600;
+      color: #c9a24d;
+      font-size: 36px;
+    }
+    .description {
+      font-size: 34px;
+    }
+  }
+  .metrics-bg {
+    margin: 2rem;
+    width: 31rem;
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(
+      180deg,
+      rgba(15, 29, 40, 0.6) 0%,
+      rgba(15, 29, 40, 0.4) 40%,
+      rgba(15, 29, 40, 0.8) 100%
+    );
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+
+  .bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(5, 30, 45, 0.7) 0%, rgba(5, 30, 45, 0.5) 50%, rgba(5, 30, 45, 0.85) 100%);
+    z-index: 1;
+  }
+
+  .metrics-container {
+    padding: 2rem 1rem;
+    color: #ffffff;
+    z-index: 2;
+    position: relative;
+  }
+
+  .metrics-section {
+    margin-bottom: 32px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #c9a24d;
+    margin-bottom: 20px;
+  }
+
+  .metric {
+    margin-bottom: 18px;
+  }
+
+  .label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    opacity: 0.9;
+  }
+
+  .bar-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .bar {
+    flex: 1;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6ec1e4, #9adcf3);
+    transition: width 0.4s ease;
+  }
+
+  .value {
+    min-width: 48px;
+    text-align: right;
+    font-size: 14px;
+    opacity: 0.85;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    margin: 28px 0;
+  }
+}

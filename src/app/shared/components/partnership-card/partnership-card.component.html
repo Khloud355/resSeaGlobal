@@ -1,0 +1,15 @@
+<div class="cards" (click)="onClick()">
+  <div class="card-index">
+    {{ card()?.index }}
+  </div>
+  <div
+    class="card"
+    [ngStyle]="{
+      'background-image': 'url(' + card()?.image + ')'
+    }"
+  >
+    <div class="overlay">
+      <span class="card-title"> {{ card()?.name }}</span>
+    </div>
+  </div>
+</div>

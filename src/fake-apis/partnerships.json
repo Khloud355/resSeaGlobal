@@ -1,0 +1,61 @@
+{
+  "partners": [
+    {
+      "id": 1,
+      "icon":"../assets/Logos/WB.svg",
+      "name": "Warner Bros. Discovery",
+      "description": "Warner Brothers Discovery is producing a series of films that highlight the Red Sea's natural beauty and cultural heritage to drive global awareness of environmental stewardship's vital role in sustainable tourism development.",
+       "image": "../assets/images/03_3.png"
+
+    },
+        {
+      "id": 2,
+      "icon":"../assets/Logos/Al-Ahli.svg",
+      "name": "Al-Ahli FC",
+      "description": "Warner Brothers Discovery is producing a series of films that highlight the Red Sea's natural beauty and cultural heritage to drive global awareness of environmental stewardship's vital role in sustainable tourism development.",
+       "image": "../assets/images/01_1.png"
+
+    },
+        {
+      "id": 3,
+      "icon":"../assets/Logos/TheOcean.svg",
+      "name": "The Ocean Race",
+      "description": "Warner Brothers Discovery is producing a series of films that highlight the Red Sea's natural beauty and cultural heritage to drive global awareness of environmental stewardship's vital role in sustainable tourism development.",
+    "image": "../assets/images/02_2.png"
+    },
+        {
+      "id": 4,
+      "icon":"../assets/Logos/Alula.svg",
+      "name": "Alula",
+      "description": "Warner Brothers Discovery is producing a series of films that highlight the Red Sea's natural beauty and cultural heritage to drive global awareness of environmental stewardship's vital role in sustainable tourism development.",
+      "image": "../assets/images/04_4.png"
+    }
+  ],
+    "vision": [
+        {
+      "id": 1,
+      "title": "Warner Bros.Discovery",
+      "description": "Partnership",
+      "image": "../assets/images/03_3.png"
+    },
+      {
+      "id": 2,
+      "title": "AlAhli Football Club",
+    "description": "Partnership",
+      "image": "../assets/images/ahli-win.jpg"
+    },
+      {
+      "id": 3,
+      "title": "The Ocean Race",
+       "description": "Partnership",
+      "image": "../assets/images/ocean-race.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Strategic <br />Partnership between",
+      "description": "Red Sea Global (RSG) <br />and Al Ula",
+      "image": "../assets/images/about-landing-page-hero.jpg"
+    }
+
+  ]
+}

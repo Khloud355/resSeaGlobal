@@ -1,0 +1,23 @@
+<div class="partnerships-detail-conteiner" @slideInUp>
+  <div class="back-btn" (click)="back()">
+    <img src="../../../../../../assets/images/back.png" alt="" />
+  </div>
+  <div class="company-details">
+    <div class="company">
+      <img [src]="partnerData.icon" alt="logo" />
+    </div>
+
+    <h1 class="title">{{ partnerData.name }}</h1>
+
+    <p class="description">
+      {{ partnerData.description }}
+    </p>
+  </div>
+
+  <div class="scroll-down" (click)="openVision()">
+    <span class="icon">
+      <img src="../../../../../../assets/images/down-arrow.png" alt="" />
+    </span>
+    <span>scroll down</span>
+  </div>
+</div>
