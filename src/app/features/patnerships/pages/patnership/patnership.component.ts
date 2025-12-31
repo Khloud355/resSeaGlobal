@@ -22,7 +22,7 @@ export class PatnershipComponent implements OnInit {
       id: 2,
       index: '02',
       name: 'Al Ahli FC',
-      image: '../../../../../assets/images/01.png',
+      image: '../../../../../assets/images/01_1.png',
 
       description: '',
     },
@@ -37,7 +37,7 @@ export class PatnershipComponent implements OnInit {
       id: 4,
       index: '04',
       name: 'Alula',
-      image: '../../../../../assets/images/04_4.png',
+      image: '../../../../../assets/images/04.png',
       description: '',
     },
   ];

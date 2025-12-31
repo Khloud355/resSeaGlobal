@@ -43,5 +43,6 @@ export class PartnershipDetailsComponent implements OnInit {
 
   back() {
     this.location.back();
+    this.layoutService.setBackground('null', 'slideInUp');
   }
 }
