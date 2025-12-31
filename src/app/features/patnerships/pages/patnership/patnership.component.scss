@@ -25,9 +25,9 @@
 
 .card-container {
   display: flex;
-  height: 250px;
+  // height: 250px;s
   width: 100%;
-  // overflow: hidden;
+  overflow: hidden;
 
   app-partnership-card {
     display: block;
@@ -42,19 +42,16 @@
     app-partnership-card {
       flex: 0 0 0;
       opacity: 0;
-      // overflow: hidden;
+      overflow: hidden;
       pointer-events: none;
+      // background-position: center center; /* 👈 الصورة كلها تبان */
     }
 
     app-partnership-card:hover {
       flex: 1 0 100%;
       opacity: 1;
       pointer-events: auto;
+      // background-position: center center;
     }
   }
-}
-
-.card-container:has(app-partnership-card:hover) app-partnership-card:hover .card {
-  background-position: center center; /* 👈 الصورة كلها تبان */
-  background-size: 100%;
 }

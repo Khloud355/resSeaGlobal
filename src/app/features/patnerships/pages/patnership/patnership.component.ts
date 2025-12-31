@@ -14,7 +14,7 @@ export class PatnershipComponent implements OnInit {
       id: 1,
       index: '01',
       name: 'Warner Bros. Discovery',
-      image: '../../../../../assets/images/03_3.png',
+      image: '../../../../../assets/images/03.png',
 
       description: '',
     },
